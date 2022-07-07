@@ -1,23 +1,26 @@
 <header class="c-header">
-  <h1 class="c-header__logo"><a href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="Logo"></a></h1>
+  
   <nav class="c-gnav">
     <ul>
       <% if (typeof linklists != 'undefined') { %>
         <% linklists.main && linklists.main.forEach(link => { %>
           <li>
             <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
-            <% if (link.links) { %>
-              <ul>
-                <% link.links.forEach(child_link => { %>
-                  <li>
-                    <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%= child_link.title %></a>
-                  </li>
-                <% }) %>
-              </ul>
-            <% } %>
           </li>
         <% }) %>
       <% } %>
     </ul>
   </nav>
+  <div class="c-header__banner">
+    <img src="../_public/assets/img/bg_main.jpg" alt="Banner">
+    <div class="c-header__content">
+      <h3>健栄製薬の</h3>
+      <img src="./_public/assets/img/title.png" alt="Title">
+      <div class="c-line1"></div>
+      <h4>MENTHA OIL</h4>
+      <p>ハッカ油は、毎日の暮ら しを豊かにする</p>
+      <h2>魔法のしずく</h2>
+      <a href="#">ハッカ?ミント?</a>
+    </div>
+  </div>
 </header>

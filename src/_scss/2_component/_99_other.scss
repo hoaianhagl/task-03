@@ -2,5 +2,168 @@
 other
 ------------------------------------------------------------*/
 
-/*
+/*------------------------------------------------------------
+label tag for p-useage
 ------------------------------------------------------------*/
+.c-label {
+    position: absolute;
+    color: #2c7978;
+    font-family: $font1;
+
+    p {
+        font-size: 1.5rem;
+        letter-spacing: 1.6px;
+        line-height: 1.1;
+        font-weight: bolder;
+        border-bottom: 1px solid;
+    }
+
+    p::before {
+        position: absolute;
+        content: "";
+        background-color: #25a989;
+        height: 40px;
+        width: 1px;
+        left: -17px;
+        top: -8px;
+        transform: rotate(149deg);
+    }
+
+    p::after {
+        position: absolute;
+        content: "";
+        background-color: #25a989;
+        width: 40px;
+        height: 1px;
+        right: -35px;
+        top: 10px;
+        transform: rotate(122deg);
+    }
+
+    &__style1 {
+        left: -20px;
+        top: -44px;
+    }
+    
+    &__style2 {
+        left: -27px;
+        top: -44px;
+    }
+}
+
+/*------------------------------------------------------------
+product item for p-useage
+------------------------------------------------------------*/
+.c-item {
+    display: inline-block;
+    color: #333;
+    position: relative;
+    line-height: 1.5;
+    text-align: right;
+    left: 7px;
+
+    &::after {
+        display: block;
+        position: relative;
+        content: "";
+        width: 105%;
+        border-bottom: 1px dashed #333;
+    }
+
+    &__style1 {
+        top: 37px;
+        letter-spacing: 0.1rem;
+        
+        &::after {
+            left: -10px;
+            top: 4px;
+        }
+    }
+
+    &__style2 {
+        top: 40px;
+        letter-spacing: 0.15rem;
+        left: 3px;
+
+        &::after {
+            left: -14px;
+            padding-left: 2px;
+            top: 4px;
+        }
+    }
+
+    &__style3 {
+        top: 40px;
+        letter-spacing: 0.15rem;
+        left: 10px;
+
+        &::after {
+            left: -16px;
+            padding-left: 9px;
+            top: 4px;
+        }
+    }
+    
+    &__style4 {
+        top: 57px;
+        letter-spacing: 0.13rem;
+        left: 16px;
+
+        &::after {
+            left: -20px;
+            padding-left: 10px;
+            top: 4px;
+        }
+    }
+    
+    &__style5 {
+        top: 25px;
+        letter-spacing: 0.05rem;
+        font-size: 1.5rem;
+        left: -6px;
+
+        &::after {
+            left: -10px;
+            padding-left: 2px;
+            top: 1px;
+        }
+    }
+    
+    &__style6 {
+        top: 55px;
+        letter-spacing: 0.05rem;
+        font-size: 1.5rem;
+        left: -14px;
+
+        &::after {
+            left: -43px;
+            padding-left: 37px;
+            top: 2px;
+        }
+    }
+    
+    &__style7 {
+        top: 20px;
+        letter-spacing: 0.05rem;
+        font-size: 1.5rem;
+        left: -228px;
+
+        &::after {
+            padding-left: 7px;
+            top: 1px;
+        }
+    }
+    
+    &__style8 {
+        top: 21px;
+        letter-spacing: 0.05rem;
+        font-size: 1.5rem;
+        left: -292px;
+        
+
+        &::after {
+            padding-left: 21px;
+            top: 2px;
+        }
+    }
+}

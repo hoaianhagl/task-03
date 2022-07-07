@@ -2,22 +2,28 @@
   "linklists": {
     "main": [
       {
-        "title": "Home",
+        "title": "トップ",
         "url": "/"
       },
       {
-        "title": "About",
-        "url": "/about.html"
+        "title": "毎日にハッカ油",
+        "url": "/"
       },
       {
-        "title": "Nested 1",
-        "url": "/nested/",
-        "links": [
-          {
-            "title": "Nested 2",
-            "url": "/nested/nested/"
-          }
-        ]
+        "title": "製品情報",
+        "url": "/"
+      },
+      {
+        "title": "Q&A",
+        "url": "/"
+      },
+      {
+        "title": "ハッカ油コラム",
+        "url": "/"
+      },
+      {
+        "title": "ハッカ油ムービー",
+        "url": "/"
       }
     ]
   }

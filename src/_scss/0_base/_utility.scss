@@ -8,9 +8,97 @@
 //}
 
 //------------------------------------------------------------
-// margin
+// top-left for product items in p-usage section
 //------------------------------------------------------------
+.u-mg--t1 {
+    left: 77px;
+}
+
+.u-mg--t2 {
+    top: 40px;
+    left: 77px;  
+}
+
+.u-mg--t3 {
+    top: 40px;
+    left: 72px;  
+}
+
+.u-mg--t4 {
+    left: 80px;
+}
+
+.u-mg--t5 {
+    top: 122px;
+    left: 91px;  
+}
+
+.u-mg--t6 {
+    top: 171px;
+    left: 60px;  
+}
+
+.u-mg--t7 {
+    top: 145px;
+    left: 98px;  
+}
+
+.u-mg--t8 {
+    left: 55px;
+    top: 57px;
+}
 
 //------------------------------------------------------------
-// color
+// image width for product items in p-usage section
 //------------------------------------------------------------
+.u-img--w1 {
+    img {
+        width: 54px;
+    }
+}
+
+.u-img--w2 {
+    img {
+        width: 85px;
+    }
+}
+
+.u-img--w3 {
+    img {
+        width: 42px;
+    }
+}
+
+.u-img--w4 {
+    img {
+        width: 60px;
+    }
+}
+
+.u-img--w5 {
+    img {
+        width: 155px;
+    }
+}
+
+.u-img--w6 {
+    img {
+        width: 126px;
+        height: 107px;
+    }
+}
+
+.u-img--w7 {
+    img {
+        width: 160px;
+    }
+}
+
+.u-display--none {
+    display: none;
+}
+
+.u-display--block {
+    display: block;
+}
+

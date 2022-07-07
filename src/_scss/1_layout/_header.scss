@@ -1,29 +1,91 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: relative;
-    background: rgba(255, 255, 255, 0.9);
+    width: $base-width;
+    margin: 0 auto 150px;
+    display: inline;
+
+    &__banner {
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+        max-width: 1120px;
+        padding-top: 100px;
+
+        img:first-child {
+            border-radius: 60px;
+            width: 1120px;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 76px;
+        left: 171px;
+        text-align: center;
+        line-height: 1;
+
+        h3 {
+            font-size: 2.7rem;
+            font-weight: 400;
+            margin-bottom: 1px;
+            letter-spacing: 1.7px;
+        }
+
+        h4 {
+            font-size: 1.8rem;
+            word-spacing: 0.5px;
+            margin-bottom: 26px;
+            line-height: 1.5;
+            font-weight: lighter;
+        }
+
+        p {
+            font-size: 1.7rem;
+            letter-spacing: 0.3px;
+            line-height: 1.5;
+            margin-bottom: 7px;
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 400;
+            margin-bottom: 42px;
+            letter-spacing: 1.7px;
+        }        
+
+        a {
+            background-color: #25a989;
+            border-radius: 100px;
+            padding: 10px 41px;
+            color: #fff;
+            text-align: center;
+            font-size: 2.5rem;
+            cursor: pointer;
+            letter-spacing: 6.5px;
+        }
+    }
 }
 /* Main menu
 ------------------------------------------------------------*/
 .c-gnav {
-    ul {
-    }
+    width: 190px;
+    position: fixed;
+    top: 65px;
+    left: 0;
 
     li {
-        display: inline-block;
-
-        + li {
-            margin-left: 20px;
-        }
+        background: url("./_public/assets/img/nav-bg.png") no-repeat;
+        margin-bottom: 15px;
+        height: 40px;
+        line-height: 44px;
+        width: 198px;
+        padding: 0 20px;
     }
 
     a {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         text-transform: capitalize;
+        color: #fff;
     }
 }
