@@ -2,8 +2,45 @@
 footer
 ------------------------------------------------------------*/
 .c-footer {
-    // padding: 20px;
-    // background: #051a2b;
-    // color: #fff;
-    // text-align: center;
+    padding-bottom: 68px;
+
+    &__image {
+        margin-bottom: 113px;
+
+        img {
+            border-radius: 5rem;
+            background-color: transparent;
+        }
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__contact {
+        line-height: 1.6;
+        font-size: 1.5rem;
+        letter-spacing: 0.03rem;
+
+        p:last-child {
+            letter-spacing: 0.09rem;
+            line-height: 1.5;
+        }
+    }
+
+    &__logo {
+        align-self: flex-end;
+        
+        
+        img {
+            width: 145px;
+            float: right;
+            margin-bottom: 8px;
+        }
+
+        p {
+            letter-spacing: 0.04rem;
+        }
+    }
 }

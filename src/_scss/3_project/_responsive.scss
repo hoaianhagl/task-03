@@ -1,0 +1,77 @@
+@include screen750 {
+    .c-gnavicon {
+        display: block;
+        z-index: 4;
+        position: absolute;
+        top: 30px;
+        width: 90px;
+
+        &__open {
+            display: none;
+        }
+
+        &__close {
+            display: block;
+        }
+    }
+
+    .c-gnavmobile {
+        display: none;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 750px;
+        height: 10582px;
+        background-color: #1f4242;
+
+        &__background {
+            position: absolute;
+            max-width: 321px;
+            width: 100%;
+            z-index: -1;
+        }
+
+        &__background:nth-child(1) {
+            top: 0;
+        }
+
+        &__background:nth-child(2) {
+            right: 0;
+        }
+
+        ul {
+            color: #fff;
+            text-align: center;
+            margin: 0 30px;
+
+            li {
+                font-size: 4rem;
+                line-height: 1;
+                padding: 60px 0;
+                border-bottom: 1px solid #3a5656;
+                box-shadow: 0 1px #1d3636;
+            }
+        }
+    }
+
+    .p-top1 {
+        padding: 30px;
+
+        &__pointitem {
+            max-width: 634px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        &__pointover {
+            margin: 5%;
+            top: 0;
+            left: 0;
+            max-width: 90%;
+            max-height: 90%;
+        }
+    }
+    
+}

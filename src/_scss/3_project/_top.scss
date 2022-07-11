@@ -2,57 +2,106 @@
 Css of home page
 ------------------------------------------------------------*/
 .p-top {
-    margin: 50px auto 0;
-    /*---------------part1------------------------*/
-    .p-useage {
-        margin: 0 auto;
-        width: 100%;
-        max-width: 1120px;
-        position: relative;
-        margin-bottom: 267px;
-    
-        h4 {
-            text-align: center;
-            font-size: 2rem;
-            font-weight: 400;
-            letter-spacing: 2px;
-            margin-bottom: 5px;
-        }
+    margin: 75px auto 100px;  
+}
 
-        h2 {
-            text-align: center;
-            font-size: 4.3rem;
-            font-weight: bolder;
-            letter-spacing: 1.2rem;
-            line-height: 1;
-        }
+/*---------------part1------------------------*/
+.p-useage {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1120px;
+    margin-bottom: 94px;
 
-        &__item {
-            display: inline-block;
-            position: relative;
-
-            &:nth-child(1),
-            &:nth-child(2),
-            &:nth-child(3),
-            &:nth-child(5),
-            &:nth-child(6),
-            &:nth-child(7) {
-                padding-right: 39px;
-            }
-        }
-
-        &__cmt {
-            width: 116px;
-            position: absolute;
-            bottom: 90px;
-        }
-
+    h4 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+        margin-bottom: 2px;
     }
+
+    h2 {
+        text-align: center;
+        font-size: 4.48rem;
+        font-weight: bolder;
+        letter-spacing: 1.1rem;
+        line-height: 1;
+    }
+
+    &__productdisplay {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+
+        &:nth-child(1) {
+            margin-left: 80px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        &:nth-child(2) {
+            margin-left: 41px;
+            margin-top: 41px;
+        }
+
+        &:nth-child(3) {
+            margin-left: 37px;
+            margin-top: 41px;
+        }
+
+        &:nth-child(4) {
+            margin-left: 51px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        &:nth-child(5) {
+            margin-left: 91px;
+            margin-top: 61px;
+        }
+
+        &:nth-child(6) {
+            margin-left: 11px;
+            margin-top: 111px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        &:nth-child(7) {
+            margin-left: 82px;
+            margin-top: 84px;
+        }
+
+        &:nth-child(8) {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__cmt {
+        width: 116px;
+        position: absolute;
+        // bottom: 110px;
+        bottom: 90px;
+    }
+
 }
 
 .p-top1 {
     background-color: #f5f4ee;
-    padding: 72px 415px;
+    padding-top: 69px;
+    padding-bottom: 107px;
+
+    &__pointpart {
+        margin-bottom: 80px;
+    }
 
     &__pointintro {
         display: flex;
@@ -65,8 +114,7 @@ Css of home page
         padding-top: 27px;
 
         img {
-            margin-bottom: 20px;
-            
+            margin-bottom: 20px; 
         }
 
         p {
@@ -105,6 +153,7 @@ Css of home page
 
     &__pointcontent {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
@@ -131,10 +180,17 @@ Css of home page
     }
 
     &__pointover {
-        background-color: rgba($color: #fff, $alpha: 0.7);
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        max-width: 290px;
+        max-height: 290px;
+        background-color: rgba($color: #fff, $alpha: 0.8);
         border-radius: 2.6rem;
         position: absolute;
-        padding: 43px 45px 59px;
+        padding: 0 45px;
         margin: 20px;
         top: 0;
         left: 0;
@@ -144,7 +200,8 @@ Css of home page
             text-align: center;
             font-size: 2.5rem;
             letter-spacing: 0.15rem;
-            margin-bottom: 24px;
+            line-height: 28px;
+            margin-bottom: 15px;
 
             &::after {
                 content: "";
@@ -153,8 +210,9 @@ Css of home page
                 height: 1px;
                 width: 50px;
                 background-color: #176b6a;
-                left: 75px;
-                top: 10px;
+                left: 50%;
+                transform: translate(-50%);
+                top: 16px;
             }
         }
 
@@ -162,7 +220,8 @@ Css of home page
             font-size: 1.3rem;
             letter-spacing: 0.02rem;
             line-height: 1.6;
-            margin-bottom: 40px;
+            margin-top: 15px;
+            margin-bottom: 27px;
         }
 
         a {
@@ -180,5 +239,183 @@ Css of home page
             }
         }
 
+    }
+
+    &__pointover:nth-child(1) {
+        display: flex;
+    }
+
+    &__footer {
+        max-width: 1120px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+
+        h3 {
+            color: #176b6a;
+            font-size: 3rem;
+            text-align: center;
+            letter-spacing: 0.3rem;
+            margin-bottom: 41px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__branding {
+        display: flex;
+    }
+
+    &__logo {
+        position: relative;
+        width: 260px;
+        height: 110px;
+        background-color: #fff;
+        border-radius: 1.6rem;
+        margin-bottom: 46px;
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            margin-right: 20px;
+        }
+
+        img:first-child {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        img:last-child {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.p-top2 {
+    padding-top: 76px;
+    margin-bottom: 107px;
+
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 3.6rem;
+        color: #176b6a;
+        font-weight: 300;
+        letter-spacing: 0.4rem;
+        margin-bottom: 41px;
+    }
+
+    &__qa--part {
+        padding: 0 85px;
+        margin-bottom: 44px;
+    }
+
+    &__quest--part {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        p {
+            display: inline-block;
+            color: #176b6a;
+            margin-left: 15px;
+            letter-spacing: 0.04rem;
+            font-size: 1.5rem;
+            line-height: 55px;
+        }
+    }
+
+    &__q--icon {
+        display: inline-block;
+        position: relative;
+        width: 59px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        span {
+            text-transform: capitalize;
+            color: #333;
+            font-size: 2.6rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__ans--part {
+        p {
+            letter-spacing: 0.14rem;
+        }
+    }
+}
+
+.p-top3 {
+    &__banner {
+        margin-bottom: 50px;
+
+        img {
+            border-radius: 5rem;
+            background-color: transparent;
+        }
+        
+    }
+
+    &__content {
+        margin: 0 85px 36px;
+        padding-bottom: 30px;
+        position: relative;
+        border-bottom: 1px solid #176b6a;
+
+        p {
+            letter-spacing: 0.135rem;
+            max-width: 816px;
+        }
+    }
+
+    &__content--image {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        img {
+            border-radius: 10px;
+            background-color: transparent;
+        }
+    }
+
+    &__des {
+        margin-left: 15px;
+
+        p {
+            line-height: 1.1;
+            letter-spacing: 0.15rem;
+        }
+
+        h3 {
+            font-size: 2.6rem;
+            letter-spacing: 0.15rem;
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 42%;
+        right: 0;
+        
+        img {   
+            height: 35px;
+        }
     }
 }

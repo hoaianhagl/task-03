@@ -1,16 +1,24 @@
 <header class="c-header">
-  
-  <nav class="c-gnav">
-    <ul>
-      <% if (typeof linklists != 'undefined') { %>
-        <% linklists.main && linklists.main.forEach(link => { %>
-          <li>
-            <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
-          </li>
-        <% }) %>
-      <% } %>
-    </ul>
-  </nav>
+  <div class="c-header__droplayer">
+    <div class="c-header__droplayer1">
+      <img src="../_public/assets/img/drop1.png" alt="Drop">
+    </div>
+    <div class="c-header__droplayer2">
+      <img src="../_public/assets/img/drop2.png" alt="Drop">
+    </div>
+    <div class="c-header__droplayer3">
+      <img src="../_public/assets/img/drop3.png" alt="Drop">
+    </div>
+    <div class="c-header__droplayer4">
+      <img src="../_public/assets/img/drop4.png" alt="Drop">
+    </div>
+    <div class="c-header__droplayer5">
+      <img src="../_public/assets/img/drop5.png" alt="Drop">
+    </div>
+    <div class="c-header__droplayer6">
+      <img src="../_public/assets/img/drop6.png" alt="Drop">
+    </div>
+  </div>
   <div class="c-header__banner">
     <img src="../_public/assets/img/bg_main.jpg" alt="Banner">
     <div class="c-header__content">
@@ -23,4 +31,46 @@
       <a href="#">ハッカ?ミント?</a>
     </div>
   </div>
+  
 </header>
+
+<!---------------------------- PC Menu ---------------------------->
+<nav class="c-gnav pc-only">
+  <ul>
+    <li><a href="#">トップ</a></li>
+    <li><a href="#">毎日にハッカ油</a></li>
+    <li><a href="#">製品情報</a></li>
+    <li><a href="#">Q&A</a></li>
+    <li><a href="#">ハッカ油コラム</a></li>
+    <li><a href="#">ハッカ油ムービー</a></li>
+  </ul>
+</nav>
+
+<!-------------------------- Mobile Menu -------------------------->
+<div class="c-gnavicon sp-only" id="openmenu">
+  <div class="c-gnavicon__close">
+    <img src="../_public/assets/img/menumobile-icon.png" alt="Mobile Menu Icon">
+  </div>
+  <div class="c-gnavicon__open">
+    <img src="../_public/assets/img/iconmenu-mobile.png" alt="Icon">
+  </div>
+</div>
+
+<nav class="c-gnavmobile sp-only">
+  <div class="c-gnavmobile__background">
+    <img src="../_public/assets/img/fixed-top.png" alt="leave">
+  </div>
+  <div class="c-gnavmobile__background">
+    <img src="../_public/assets/img/fixed-bottom.png" alt="leave">
+  </div> 
+  
+  <ul>
+    <li><a href="#">トップ</a></li>
+    <li><a href="#">毎日にハッカ油</a></li>
+    <li><a href="#">製品情報</a></li>
+    <li><a href="#">Q&A</a></li>
+    <li><a href="#">ハッカ油コラム</a></li>
+    <li><a href="#">ハッカ油ムービー</a></li>
+  </ul>
+</nav>
+

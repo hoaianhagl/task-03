@@ -41,13 +41,13 @@ label tag for p-useage
     }
 
     &__style1 {
-        left: -20px;
-        top: -44px;
+        left: -23px;
+        top: -43px;
     }
     
     &__style2 {
         left: -27px;
-        top: -44px;
+        top: -43px;
     }
 }
 
@@ -60,7 +60,6 @@ product item for p-useage
     position: relative;
     line-height: 1.5;
     text-align: right;
-    left: 7px;
 
     &::after {
         display: block;
@@ -72,6 +71,7 @@ product item for p-useage
 
     &__style1 {
         top: 37px;
+        left: 4px;
         letter-spacing: 0.1rem;
         
         &::after {
@@ -125,7 +125,7 @@ product item for p-useage
         &::after {
             left: -10px;
             padding-left: 2px;
-            top: 1px;
+            top: 3px;
         }
     }
     
@@ -155,11 +155,11 @@ product item for p-useage
     }
     
     &__style8 {
-        top: 21px;
+        top: 19px;
         letter-spacing: 0.05rem;
         font-size: 1.5rem;
-        left: -292px;
-        
+        left: -128px;
+        position: absolute;
 
         &::after {
             padding-left: 21px;
