@@ -10,6 +10,7 @@
 .sp-only {
     display: none;
 }
+
 @include screen750 {
     .pc-only {
         display: none;

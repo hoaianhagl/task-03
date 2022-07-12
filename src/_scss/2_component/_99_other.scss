@@ -51,6 +51,37 @@ label tag for p-useage
     }
 }
 
+@include screen750 {
+    .c-label {
+        p {
+            font-size: 1.3rem;
+            letter-spacing: 1.6px;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+        
+        p::before {
+            height: 20px;
+            left: -15px;
+            top: 0px;
+        }
+
+        p::after {
+            width: 20px;
+            right: -23px;
+            top: 10px;
+        } 
+        &__style1 {
+            left: -27px;
+            top: -25px;
+        }
+        
+        &__style2 {
+            left: -26px;
+            top: -25px;
+        }  
+    }
+}
 /*------------------------------------------------------------
 product item for p-useage
 ------------------------------------------------------------*/
@@ -164,6 +195,115 @@ product item for p-useage
         &::after {
             padding-left: 21px;
             top: 2px;
+        }
+    }
+}
+
+@include screen750 {
+    .c-item {
+        &__style1 {
+            top: 23px;
+            left: 5px;
+            letter-spacing: 0.01rem;
+            
+            &::after {
+                left: -9px;
+                padding-left: 3px;
+                top: 0;
+            }
+        }
+    
+        &__style2 {
+            display: inline-block;
+            position: absolute;
+            top: 29px;
+            left: -172px;
+            letter-spacing: 0.1rem;
+    
+            &::after {
+                left: 0;
+                padding-left: 2px;
+                top: 0;
+            }
+        }
+    
+        &__style3 {
+            top: 21px;
+            letter-spacing: 0.09rem;
+            left: -4px;
+    
+            &::after {
+                left: -6px;
+                padding-left: 0;
+                top: 1px;
+            }
+        }
+        
+        &__style4 {
+            display: inline-block;
+            position: absolute;
+            top: 44px;
+            letter-spacing: 0.078rem;
+            left: -198px;
+    
+            &::after {
+                left: -2px;
+                padding-left: 0;
+                top: 0;
+            }
+        }
+        
+        &__style5 {
+            top: 24px;
+            letter-spacing: 0.07rem;
+            left: 5px;
+    
+            &::after {
+                left: -11px;
+                padding-left: 0;
+                top: 0;
+            }
+        }
+        
+        &__style6 {
+            position: absolute;
+            top: 14px;
+            letter-spacing: 0.07rem;
+            font-size: 1.5rem;
+            left: -90px;
+    
+            &::after {
+                left: -0px;
+                padding-left: 25px;
+                top: 0px;
+            }
+        }
+        
+        &__style7 {
+            top: 8px;
+            letter-spacing: 0.08rem;
+            font-size: 1.5rem;
+            left: 2px;
+    
+            &::after {
+                left: -9px;
+                padding-left: 5px;
+                top: 0px;
+            }
+        }
+        
+        &__style8 {
+            top: 19px;
+            letter-spacing: 0.08rem;
+            font-size: 1.5rem;
+            left: -115px;
+            position: absolute;
+    
+            &::after {
+                left: 1px;
+                padding-left:18px;
+                top: 0px;
+            }
         }
     }
 }

@@ -9,7 +9,9 @@
         width: 100%;
         max-width: 1120px;
         padding-top: 100px;
+    }
 
+    &__image {
         img:first-child {
             border-radius: 60px;
             width: 1120px;
@@ -32,6 +34,12 @@
 
         img {
             margin-bottom: 11px;
+        }
+
+        .c-line1 {
+            width: 60px;
+            margin: 0 auto 23px;
+            border-bottom: 2px solid #000;
         }
 
         h4 {

@@ -20,16 +20,17 @@ body {
 }
 
 .l-leaves {
+    position: absolute;
+
     &__first {
-        position: absolute;
         top: 0;
-        left: 35.7%;
-        height: 100%;
+        left: 688px;
+        
     }
 
     &__second {
         position: absolute;
-        top: 52%;
+        top: 470px;
         right: 0;
     }
     
