@@ -1,12 +1,3 @@
-///*------------------------------------------------------------
-//Anchor position
-//------------------------------------------------------------*/
-//.u-anchor:before {
-//	content:"";
-//	margin-top: -100px;
-//	padding-top: 100px;
-//}
-
 //------------------------------------------------------------
 // margin
 //------------------------------------------------------------
@@ -15,6 +6,26 @@
     margin-bottom: 104px;
 }
 
+.u-top1 {
+    top: 46%;
+}
+
+.u-top2 {
+    transform: translateY(-200%);
+    transition: all 2s ease-in-out;
+}
+
+.u-mgt1 {
+    margin: 12px 0 0;
+}
+
+.u-trans1 {
+    transform: translateY(-23%);
+}
+
+.u-trans2 {
+    transform: translateX(21%);
+}
 //------------------------------------------------------------
 // image width for product items in p-usage section
 //------------------------------------------------------------
@@ -64,6 +75,24 @@
 .u-img--w7 {
     img {
         width: 160px;
+    }
+}
+
+@include screen750 {
+    .u-img--w2 {
+        img {
+            transform: rotateY(180deg);
+        }
+    }
+
+    .u-img--w5 {
+        img:nth-child(2) {
+            width: 160px;
+        }
+
+        img:nth-child(3) {
+            width: 160px;
+        }
     }
 }
 
@@ -127,6 +156,10 @@
     }
 }
 
+//------------------------------------------------------------
+// display
+//------------------------------------------------------------
+
 .u-display--none {
     display: none;
 }
@@ -135,11 +168,5 @@
     display: block;
 }
 
-.u-top1 {
-    top: 46%;
-}
 
-.u-top2 {
-    transform: translateY(-200%);
-    transition: all 2s ease-in-out;
-}
+

@@ -29,6 +29,9 @@ Css of home page
     }
 
     &__productdisplay {
+        max-width: 1120px;
+        width: 100%;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
     }
@@ -98,7 +101,7 @@ Css of home page
     padding-bottom: 108px;
 
     &__pointpart {
-        margin-bottom: 80px;
+        margin: 0 45px 80px;
     }
 
     &__pointintro {
@@ -245,7 +248,7 @@ Css of home page
 
     &__footer {
         max-width: 1120px;
-        width: 100%;
+        // width: 100%;
         margin: 0 auto;
         padding: 0 10px;
 
@@ -273,29 +276,12 @@ Css of home page
         position: relative;
         width: 260px;
         height: 110px;
-        // background-color: #fff;
-        // border-radius: 1.6rem;
-        // margin-bottom: 45px;
+        margin-bottom: 44px;
 
         img {
             max-width: 100%;
             border-radius: 1.5rem;
         }
-
-
-        // img:first-child {
-        //     position: relative;
-        //     left: 50%;
-        //     top: 50%;
-        //     transform: translate(-50%, -50%);
-        // }
-
-        // img:last-child {
-        //     position: absolute;
-        //     right: 15px;
-        //     top: 50%;
-        //     transform: translateY(-50%);
-        // }
     }
 }
 
@@ -315,7 +301,7 @@ Css of home page
 
     &__qa--part {
         padding: 0 85px;
-        margin-bottom: 45px;
+        margin: 0 45px 45px;
     }
 
     &__quest--part {
@@ -324,12 +310,12 @@ Css of home page
         margin-bottom: 7px;
 
         p {
+            padding-top: 5px;
             display: inline-block;
             color: #176b6a;
             margin-left: 15px;
             letter-spacing: 0.04rem;
             font-size: 1.5rem;
-            line-height: 55px;
         }
     }
 
@@ -356,14 +342,14 @@ Css of home page
 
     &__ans--part {
         p {
-            letter-spacing: 0.15rem;
+            letter-spacing: 0.135rem;
         }
     }
 }
 
 .p-top3 {
     &__banner {
-        margin-bottom: 50px;
+        margin: 0 45px 51px;
 
         img {
             border-radius: 5rem;
@@ -373,13 +359,13 @@ Css of home page
     }
 
     &__content {
-        margin: 0 85px 36px;
+        margin: 0 130px 34px;
         padding-bottom: 31px;
         position: relative;
         border-bottom: 1px solid #176b6a;
 
         p:nth-child(2) {
-            letter-spacing: 0.133rem;
+            letter-spacing: 0.138rem;
             max-width: 816px;
             width: 100%;
             line-height: 1.5;
@@ -389,7 +375,7 @@ Css of home page
     &__content--image {
         display: flex;
         align-items: center;
-        margin-bottom: 19px;
+        margin-bottom: 21px;
 
         img {
             border-radius: 10px;
@@ -399,7 +385,8 @@ Css of home page
 
     &__des {
         margin-left: 14px;
-        padding-top: 5px;
+        padding-top: 6px;
+
         p {
             line-height: 1;
             letter-spacing: 0.15rem;

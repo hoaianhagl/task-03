@@ -7,15 +7,14 @@ body {
     padding: 30px;
     line-height: 1.5;
     background: url("../_public/assets/img/bg-image.jpg") repeat center;
-    background-size: cover;
     @include sp {
         min-width: 320px;
     }
+    overflow-x: hidden;
 }
 
 .l-background {
     width: 100%;
-    height: 100%;
     background-color: #fff;
 }
 
@@ -25,34 +24,23 @@ body {
     &__first {
         top: 0;
         left: 688px;
-        
+        transition: all 2s ease-in-out; 
     }
 
     &__second {
         position: absolute;
         top: 470px;
         right: 0;
+        transition: all 2s ease-in-out;
     }
     
 }
 //-------------------------------------------------------
-// main {
-    
-// }
 
-// section {
-//     // margin-top: 60px;
-// }
-
-//-------------------------------------------------------
 .l-container {
+    max-width: 1120px;
     width: 100%;
-    max-width: 1030px;
     margin: 0 auto;
 }
 //-------------------------------------------------------
-// .c-mainvisual {
-//     &__inner {
-        
-//     }
-// }
+

@@ -8,13 +8,14 @@
         margin: 0 auto;
         width: 100%;
         max-width: 1120px;
+    
         padding-top: 100px;
     }
 
     &__image {
         img:first-child {
             border-radius: 60px;
-            width: 1120px;
+            width: 100%;
         }
     }
 
@@ -78,15 +79,16 @@
     //Drop layer animation
     &__droplayer {
         position: absolute;
+        max-width: 1920;
         width: 100%;
         z-index: 1;
         transform: translateY(0%);
-        transition: all 2s ease-in-out;
+        transition: all 3s ease-out;
 
     }
 
     &__droplayer1 {
-        transform: translate(26.9%, 61%);
+        transform: translate(26.9%, 68%);
         animation: move1 0.8s linear infinite;
     }
 
