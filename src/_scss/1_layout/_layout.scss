@@ -19,19 +19,19 @@ body {
 }
 
 .l-leaves {
-    position: absolute;
+    position: fixed;
 
     &__first {
         top: 0;
         left: 688px;
-        transition: all 2s ease-in-out; 
+        transition: all 1s ease-in-out; 
     }
 
     &__second {
-        position: absolute;
-        top: 470px;
+        position: fixed;
+        top: 467px;
         right: 0;
-        transition: all 2s ease-in-out;
+        transition: all 1s ease-in-out;
     }
     
 }
